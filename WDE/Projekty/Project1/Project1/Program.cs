@@ -98,9 +98,6 @@
 
         static void Main(string[] args)
         {
-            
-            
-
             //ZADANIE 8.4.1
             //ZADANIE 8.4.2
             //ZADANIE 8.4.3
@@ -109,6 +106,7 @@
             //ZADANIE 8.4.6
             //ZADANIE 8.4.7
             //ZADANIE 8.4.8
+
 
             //ZADANIE 8.5.1
             //ZADANIE 8.5.2
