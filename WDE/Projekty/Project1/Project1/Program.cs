@@ -81,14 +81,126 @@
             }
         }
 
-        void Zad84()
+        //ZADANIE 8.4.1
+        void Zad841()
+        {
+            Console.WriteLine("Input number of cykles: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] tab = new int[n];
+            for (int y = 0; y < n; y++)
+            {
+                Console.WriteLine($"Input {y + 1} cykles: ");
+                tab[y] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Result:");
+            for (int y = 0; y < n; y++)
+            {
+                if (tab[y] % 2 == 0) Console.WriteLine(tab[y]);
+            }
+        }
+
+        //ZADANIE 8.4.2
+        void Zad842()
+        {
+            Console.WriteLine("Input number of cykles: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] tab = new int[n];
+            for (int y = 0; y < n; y++)
+            {
+                Console.WriteLine($"Input {y + 1} cykles: ");
+                tab[y] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Result:");
+            for (int y = 0; y < n; y++)
+            {
+                if (tab[y] % 2 != 0) Console.WriteLine(tab[y]);
+            }
+        }
+
+        //ZADANIE 8.4.3
+        void Zad843()
+        {
+            Console.WriteLine("Input number of cykles: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] tab = new int[n];
+            for (int y = 0; y < n; y++)
+            {
+                Console.WriteLine($"Input {y + 1} cykles: ");
+                tab[y] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Result:");
+            for (int y = 0; y < n; y++)
+            {
+                if (tab[y] % 3 == 0) Console.WriteLine(tab[y]);
+            }
+        }
+
+        //ZADANIE 8.4.4
+        void Zad844()
+        {
+            Console.WriteLine("Input number of cykles: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] tab = new int[n];
+            for (int y = 0; y < n; y++)
+            {
+                Console.WriteLine($"Input {y + 1} cykles: ");
+                tab[y] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Result:");
+            for (int y = 0; y < n; y++)
+            {
+                if (tab[y] >=4 && tab[y] < 15) Console.WriteLine(tab[y]);
+            }
+        }
+
+        //ZADANIE 8.4.5
+        void Zad845()
         {
 
         }
 
-        void Zad85()
+        //ZADANIE 8.4.6
+        void Zad846()
         {
+           
+        }
 
+        //ZADANIE 8.4.7
+        void Zad847()
+        {
+            Console.WriteLine("Input number of cykles: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] tab = new int[n];
+            for (int y = 0; y < n; y++)
+            {
+                Console.WriteLine($"Input {y + 1} cykles: ");
+                tab[y] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Result:");
+            for (int y = 0; y < n; y++)
+            {
+                if (tab[y] % 2 == 0) Console.WriteLine(tab[y] + 100);
+                else Console.WriteLine(tab[y]);
+            }
+        }
+
+        //ZADANIE 8.4.8
+        void Zad848()
+        {
+            Console.WriteLine("Input number of cykles: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] tab = new int[n];
+            for (int y = 0; y < n; y++)
+            {
+                Console.WriteLine($"Input {y + 1} cykles: ");
+                tab[y] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Result:");
+            for (int y = 0; y < n; y++)
+            {
+                if (tab[y] < 0) Console.WriteLine(0);
+                else Console.WriteLine(tab[y]);
+            }
         }
 
         void Zad86()
@@ -98,16 +210,24 @@
 
         static void Main(string[] args)
         {
-            //ZADANIE 8.4.1
-            //ZADANIE 8.4.2
-            //ZADANIE 8.4.3
-            //ZADANIE 8.4.4
-            //ZADANIE 8.4.5
-            //ZADANIE 8.4.6
-            //ZADANIE 8.4.7
-            //ZADANIE 8.4.8
 
 
+            
+
+            Console.WriteLine("Input number of cykles: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] tab = new int[n];
+            for (int y = 0; y < n; y++)
+            {
+                Console.WriteLine($"Input {y + 1} cykles: ");
+                tab[y] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Result:");
+            for (int y = 0; y < n; y++)
+            {
+                if (tab[y] < 0) Console.WriteLine(0);
+                else Console.WriteLine(tab[y]);
+            }
             //ZADANIE 8.5.1
             //ZADANIE 8.5.2
 
