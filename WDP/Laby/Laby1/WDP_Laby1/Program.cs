@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WSEI
 {
-    internal class WDE_Laby1
+    internal class WDP_Laby1
     {
 
 

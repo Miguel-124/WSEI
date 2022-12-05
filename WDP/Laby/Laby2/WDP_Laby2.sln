@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WDP_Laby2", "WDP_Laby2\WDE_Laby2.csproj", "{CCFFACED-E26F-40C1-A06A-FE638E7ADBEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCFFACED-E26F-40C1-A06A-FE638E7ADBEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCFFACED-E26F-40C1-A06A-FE638E7ADBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCFFACED-E26F-40C1-A06A-FE638E7ADBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCFFACED-E26F-40C1-A06A-FE638E7ADBEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {562D47B3-2B71-437A-82EC-BEF3BC204F0A}
+	EndGlobalSection
+EndGlobal

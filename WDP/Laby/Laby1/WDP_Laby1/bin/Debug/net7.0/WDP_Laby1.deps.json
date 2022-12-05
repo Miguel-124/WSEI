@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "WDP_Laby1/1.0.0": {
+        "runtime": {
+          "WDP_Laby1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WDP_Laby1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
