@@ -424,16 +424,21 @@
             Console.WriteLine("Result:");
             for (int y = 0; y < n; y++)
             {
-                if (temp != tab[0] && temp != tab[y-1]) temp = tabMin[y - 1];
+                if (y == 0) temp = tab[y];
+                else if (temp != tab[y - 1]) temp = tab[y - 1];
                 else temp = tab[y];
 
                 for(int x=(n-1);x>y;x--)
                 {
-                    if (temp < tab[x]) tabMin[y] = temp;
+                    if (temp < tab[x])
+                    {
+                        tabMin[y] = temp;
+                        temp= tab[y];
+                    }
                     else
                     {
                         tabMin[y] = tab[x];
-                        temp= tab[y];
+                        temp = tab[y];
                     }
 
                     //if (temp > tab[x] && temp != tabMin[y - 1])
