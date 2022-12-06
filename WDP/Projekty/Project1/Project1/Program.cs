@@ -419,27 +419,38 @@
                 Console.WriteLine($"Input {y + 1} cykles: ");
                 tab[y] = Convert.ToInt32(Console.ReadLine());
             }
+            int temp = tab[0];
+            //tabMin[0] = 0;
             Console.WriteLine("Result:");
-            for (int y = 1; y <= n; y++)
+            for (int y = 0; y < n; y++)
             {
-                int temp = tab[y-1];
-                for(int x=n;x>0;--x)
+                if (temp != tab[0] && temp != tab[y-1]) temp = tabMin[y - 1];
+                else temp = tab[y];
+
+                for(int x=(n-1);x>y;x--)
                 {
-                    if (temp > tab[x] && temp != tabMin[y - 1])
-                    {
-                        temp = tab[x];
-                        tabMin[y - 1] = temp;
-                    }
+                    if (temp < tab[x]) tabMin[y] = temp;
                     else
                     {
-                        for(int z = 0;z<tabMin.Length;z++)
-                        {
-                            if (temp == tabMin[z])
-                            {
-                                // TODO:  dOKOŃCZYĆ ustawianie po minimum
-                            }
-                        }
+                        tabMin[y] = tab[x];
+                        temp= tab[y];
                     }
+
+                    //if (temp > tab[x] && temp != tabMin[y - 1])
+                    //{
+                    //    temp = tab[x];
+                    //    tabMin[y - 1] = temp;
+                    //}
+                    //else
+                    //{
+                    //    for(int z = 0;z<tabMin.Length;z++)
+                    //    {
+                    //        if (temp == tabMin[z])
+                    //        {
+                    //            // TODO:  dOKOŃCZYĆ ustawianie po minimum
+                    //        }
+                    //    }
+                    //}
                 }
             }
             foreach (var item in tabMin)
