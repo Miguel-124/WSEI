@@ -336,9 +336,64 @@
 
 
         //ZADANIE 8.6.3
+        //TO BYŁO TAKIE ŁATWE A TAK SIE Z TYM PIEPRZYŁEM...
         void Zad863()
         {
+            Console.WriteLine("Input number of cykles: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int[] tab = new int[n];
+            for (int y = 0; y < n; y++)
+            {
+                Console.WriteLine($"Input {y + 1} cykles: ");
+                tab[y] = Convert.ToInt32(Console.ReadLine());
+            }
+            int temp = tab[0];
+            Console.WriteLine("Result:");
+            for (int y = 0; y < n; y++)
+            {
+                //if (y == 0) temp = tab[y];
+                //else if (temp != tab[y - 1]) temp = tab[y - 1];
+                //else temp = tab[y];
 
+                for (int x = (n - 1); x > y; x--)
+                {
+                    if (tab[y] > tab[x])
+                    {
+                        temp = tab[y];
+                        tab[y] = tab[x];
+                        tab[x] = temp;
+                    }
+                    //{
+                    //    tabMin[y] = temp;
+                    //    temp= tab[y];
+                    //}
+                    //else
+                    //{
+                    //    tabMin[y] = tab[x];
+                    //    temp = tab[y];
+                    //}
+
+                    //if (temp > tab[x] && temp != tabMin[y - 1])
+                    //{
+                    //    temp = tab[x];
+                    //    tabMin[y - 1] = temp;
+                    //}
+                    //else
+                    //{
+                    //    for(int z = 0;z<tabMin.Length;z++)
+                    //    {
+                    //        if (temp == tabMin[z])
+                    //        {
+                    //            // TODO:  dOKOŃCZYĆ ustawianie po minimum
+                    //        }
+                    //    }
+                    //}
+                }
+            }
+            foreach (var item in tab)
+            {
+                Console.WriteLine(item.ToString());
+            }
         }
 
 
@@ -410,59 +465,7 @@
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Input number of cykles: ");
-            int n = Convert.ToInt32(Console.ReadLine());
-            int[] tab = new int[n];
-            int[] tabMin = new int[n];
-            for (int y = 0; y < n; y++)
-            {
-                Console.WriteLine($"Input {y + 1} cykles: ");
-                tab[y] = Convert.ToInt32(Console.ReadLine());
-            }
-            int temp = tab[0];
-            //tabMin[0] = 0;
-            Console.WriteLine("Result:");
-            for (int y = 0; y < n; y++)
-            {
-                if (y == 0) temp = tab[y];
-                else if (temp != tab[y - 1]) temp = tab[y - 1];
-                else temp = tab[y];
-
-                for(int x=(n-1);x>y;x--)
-                {
-                    if (temp < tab[x])
-                    {
-                        tabMin[y] = temp;
-                        temp= tab[y];
-                    }
-                    else
-                    {
-                        tabMin[y] = tab[x];
-                        temp = tab[y];
-                    }
-
-                    //if (temp > tab[x] && temp != tabMin[y - 1])
-                    //{
-                    //    temp = tab[x];
-                    //    tabMin[y - 1] = temp;
-                    //}
-                    //else
-                    //{
-                    //    for(int z = 0;z<tabMin.Length;z++)
-                    //    {
-                    //        if (temp == tabMin[z])
-                    //        {
-                    //            // TODO:  dOKOŃCZYĆ ustawianie po minimum
-                    //        }
-                    //    }
-                    //}
-                }
-            }
-            foreach (var item in tabMin)
-            {
-                Console.WriteLine(item.ToString());
-            }
-
+            Console.WriteLine("ALL TASK ARE DONE");
         }
     }
 }
